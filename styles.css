@@ -1,0 +1,107 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB; /* Sky blue background */
+}
+
+/* Bird */
+#bird {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 30px;
+    height: 30px;
+    background-image: url('bird.png');
+    background-size: cover;
+}
+
+/* Obstacles */
+.obstacle {
+    position: absolute;
+    background-color: #228B22; /* Dark green */
+    width: 50px;
+}
+
+/* Flying Birds */
+.flying-bird {
+    position: absolute;
+    background-color: #FFD700; /* Gold */
+    border-radius: 50%;
+}
+
+/* Start Screen */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.start-screen h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.start-screen #start-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Game Over Screen */
+.game-over-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+    z-index: 10;
+}
+
+.game-over-screen h1 {
+    font-size: 3em;
+}
+
+.game-over-screen #game-over-score {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.game-over-screen #restart-button {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Pause Button */
+#pause-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
